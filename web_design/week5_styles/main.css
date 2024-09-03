@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(13, 36, 112);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.main-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255); 
+    align-items: flex-end; /* move items to the bottom */
+    padding: 10px 20px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+.navigation a {
+    text-decoration: none;  /* underline */
+    color: rgb(13, 36, 112); /* link color */
+    padding: 8px;
+}
+
+.navigation a:hover {
+    color: rgb(255, 255, 255);
+    background-color:rgb(13, 36, 112);
+}
+
+.banner {
+    background-image: url("../week5_images/celebration.avif");
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    display: grid;
+    place-items: center;
+}
+
+.banner h1 {
+    color:rgb(255, 255, 255);
+    background-color:rgb(13, 36, 112);
+    padding: 10px;
+}

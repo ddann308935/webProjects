@@ -1,0 +1,41 @@
+<!DOCTYPE html>     <!--what browser is being used-->
+<html lang="en">
+    <head>          <!--contains meta info: extra info about the web browser-->
+        <title>Home Page</title> <!--tab title-->
+        <link rel="icon" href="week5_icons/home-solid.png"> <!--tab logo-->
+
+        <link rel="stylesheet" href="week5_styles/main.css"> <!--css stylesheet-->
+        <meta charset="utf-8"> <!--Language: English-->
+        <meta name="description" content="a web page for learning HTML and CSS"> <!--meta description-->
+        <meta name="keyword" content="HTML,CSS,learning">   <!--keywords within content: should be specific-->
+        <meta name="viewport" content="width = device-width, inital-scale = 1"> <!-- size of viewport on mobile devices-->
+    </head> 
+
+    <body>
+        <header class="main-header"> <!--HEADER-->
+            <a href="index.html" class="logo"> <!-- '/' link to home page-->
+                <img src="week5_images/spurs.jpg" alt="company name">  <!--clickable logo-->
+            </a>
+
+            <!---->
+            <form class="search" method="get" action="https://example.com/search">
+                <input type="search" name="query" placeholder="Search"> <!--search field-->
+                <button type="submit">Search</button> <!--submit button-->
+            </form>
+            <!---->
+            
+            <nav class="navigation"> <!--navigation through links-->
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <div class="banner">                   <!--BANNER-->
+            <h1>Welcome</h1>
+        </div>             
+        <main></main>           <!--CONTENT-->
+        <footer></footer>       <!--FOOTER-->
+    </body>
+
+</html>
