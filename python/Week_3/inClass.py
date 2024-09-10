@@ -9,9 +9,10 @@ while count < 11:
     count += 1
 
 # while statement sample
+
 import random
 
-num, count = 0, 1 # declare variables
+count = 1 # declare variables
 highest = 0
 
 while count < 11:

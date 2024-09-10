@@ -102,7 +102,11 @@ def test_print_number_of_eggs():
     print_number_of_eggs(number_of_eggs)
 
 
-
 # Run all of your test functions from the following 'if' statement
 if __name__ == '__main__':
+    test_average()
+    test_high()
+    test_power()
+    test_square_root()
+    test_print_car_sales()
     test_print_number_of_eggs()

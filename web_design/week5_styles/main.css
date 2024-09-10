@@ -1,7 +1,8 @@
 body {
     background-color: rgb(13, 36, 112);
     color: white;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px; /*viewport edges */
 }
 
 img {
@@ -13,38 +14,43 @@ img {
 }
 
 .main-header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    display: flex; /* changes layout to horizontal */
+    flex-flow: row wrap; /* combines direction and wrap */
+/* flex-direction: overall position within layout (L to R)
+    flex-wrap: wrapping text to the next line */
+    justify-content: space-between; /* spacing between HTML elements */
     background-color: rgb(255, 255, 255); 
     align-items: flex-end; /* move items to the bottom */
-    padding: 10px 20px;
+    padding: 10px 20px; /* padding of a box: TB LR */
 }
 
 .navigation {
     display: flex;
     flex-flow: row wrap;
-
 }
 
-.navigation a {
+/* element: nav, item: a */
+.navigation a { 
     text-decoration: none;  /* underline */
     color: rgb(13, 36, 112); /* link color */
     padding: 8px;
 }
 
+/* pseudoclass */
 .navigation a:hover {
     color: rgb(255, 255, 255);
     background-color:rgb(13, 36, 112);
 }
 
 .banner {
-    background-image: url("../week5_images/celebration.avif");
+    background-image: url("../week5_images/celebration.avif"); 
+    /* .. - moves out of directory */
     background-position: center;
-    background-size: cover;
-    min-height: 60vh;
-    display: grid;
-    place-items: center;
+    background-size: cover; /* fitting an image in the display */
+    min-height: 60vh; 
+    /* half the height of the viewport */
+    display: grid; /* formatting the display */
+    place-items: center; /* placing HTML items in the display */
 }
 
 .banner h1 {

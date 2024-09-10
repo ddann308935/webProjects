@@ -13,27 +13,35 @@
 
     <body>
         <header class="main-header"> <!--HEADER-->
-            <a href="index.html" class="logo"> <!-- '/' link to home page-->
+
+            <a href="index.html" class="logo"> <!--LOGO-->
+            <!-- '/' link to home page-->
                 <img src="week5_images/spurs.jpg" alt="company name">  <!--clickable logo-->
             </a>
 
-            <!---->
-            <form class="search" method="get" action="https://example.com/search">
-                <input type="search" name="query" placeholder="Search"> <!--search field-->
+            <!--Form: allows the user to input data to the website-->
+            <form class="search" method="get" action="https://example.com/search"> <!--SEARCH FIELD-->
+            <!--method="get", action="URL/script where the search query is sent"-->
+            <!--action="provide a script from the server side to process this search and return a result"-->
+            <!--a website with search function: requires a server with database-->
+                <input type="search" name="query" placeholder="Search"> <!--search field--> 
+                <!--Placeholder: grey text inside the search field-->
+                <!--type="search" allows the user to clear their input-->
                 <button type="submit">Search</button> <!--submit button-->
             </form>
-            <!---->
             
-            <nav class="navigation"> <!--navigation through links-->
+            <nav class="navigation"> <!--NAVIGATION through links-->
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
+
         </header>
 
-        <div class="banner">                   <!--BANNER-->
+        <div class="banner">    <!--BANNER-->
             <h1>Welcome</h1>
-        </div>             
+        </div>
+                    
         <main></main>           <!--CONTENT-->
         <footer></footer>       <!--FOOTER-->
     </body>

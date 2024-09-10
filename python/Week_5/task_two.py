@@ -1,3 +1,6 @@
+# Choose between pizza size: S M L or X
+# Display prices for each size
+
 user_size = input("Please choose from following for the size of pizza: S, M, L, or X: ")
 
 pizza_size = ['S', 'M', 'L', 'X']
