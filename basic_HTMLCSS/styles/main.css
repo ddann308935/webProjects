@@ -14,10 +14,10 @@ img {
 }
 
 .main-header {
-    display: flex; /* changes layout to horizontal */
-    flex-flow: row wrap; /* combines direction and wrap */
-/* flex-direction: overall position within layout (L to R)
+    display: flex; /* FLEX CONTAINER: changes layout to horizontal */
+    /* flex-direction: overall position within layout (L to R)
     flex-wrap: wrapping text to the next line */
+    flex-flow: row wrap; /* combines direction and wrap */
     justify-content: space-between; /* spacing between HTML elements */
     background-color: rgb(255, 255, 255); 
     align-items: flex-end; /* move items to the bottom */
@@ -43,18 +43,52 @@ img {
 }
 
 .banner {
-    background-image: url("../week5_images/celebration.avif"); 
+    background-image: url("../images/celebration.avif"); /* this doesn't get printed */
     /* .. - moves out of directory */
-    background-position: center;
+    background-position: 50% 30%;
     background-size: cover; /* fitting an image in the display */
     min-height: 60vh; 
     /* half the height of the viewport */
+
+    /* CENTER */
     display: grid; /* formatting the display */
     place-items: center; /* placing HTML items in the display */
+    /* TOP LEFT */
+    display: flex;
+    justify-content: flex-start; /* LEFT */
+    align-items: flex-start; /* TOP */
 }
 
 .banner h1 {
     color:rgb(255, 255, 255);
     background-color:rgb(13, 36, 112);
     padding: 10px;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 2em;
+    gap: 20px;
+}
+
+.card-image {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1em;
+}
+
+.card-button {
+    background-color:rgb(255, 255, 255);
+    color: rgb(13, 36, 112);
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
 }

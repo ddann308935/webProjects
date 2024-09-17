@@ -1,0 +1,29 @@
+table{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #808080;
+}
+
+th,td {
+    border-style: solid;
+    padding: 5px;
+    text-align: center;
+}
+
+.fri {
+    background-color: #00ff80;
+}
+
+.sun {
+    background-color: hsl(49, 100%, 50%);
+}
+
+#today {
+    background-color: #d1cec5;
+    color: #d60f20;
+}
+
+
+
+
+
