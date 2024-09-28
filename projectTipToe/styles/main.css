@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(13, 36, 112);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px; /*viewport edges */
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.main-header {
+    display: flex; /* FLEX CONTAINER: changes layout to horizontal */
+    /* flex-direction: overall position within layout (L to R)
+    flex-wrap: wrapping text to the next line */
+    flex-flow: row wrap; /* combines direction and wrap */
+    justify-content: space-between; /* spacing between HTML elements */
+    background-color: rgb(255, 255, 255); 
+    align-items: flex-end; /* move items to the bottom */
+    padding: 10px 20px; /* padding of a box: TB LR */
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/* element: nav, item: a */
+.navigation a { 
+    text-decoration: none;  /* underline */
+    color: rgb(13, 36, 112); /* link color */
+    padding: 8px;
+}
+
+/* pseudoclass */
+.navigation a:hover {
+    color: rgb(255, 255, 255);
+    background-color:rgb(13, 36, 112);
+}
+
+.banner {
+    background-image: url("../images/smartcasual_party.jpg"); /* this doesn't get printed */
+    /* .. - moves out of directory */
+    background-position: 50% 30%;
+    background-size: cover; /* fitting an image in the display */
+    min-height: 60vh; 
+    /* half the height of the viewport */
+
+    /* CENTER */
+    display: grid; /* formatting the display */
+    place-items: center; /* placing HTML items in the display */
+    /* TOP LEFT */
+    display: flex;
+    justify-content: flex-start; /* LEFT */
+    align-items: flex-start; /* TOP */
+}
+
+.banner h1 {
+    color:rgb(255, 255, 255);
+    background-color:rgb(13, 36, 112);
+    padding: 10px;
+}
+
+.home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1200px;
+    margin: 2em;
+    gap: 20px;
+}
+
+.card-image {
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.card {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 1em;
+}
+
+.card-button {
+    background-color:rgb(255, 255, 255);
+    color: rgb(13, 36, 112);
+    display: block;
+    padding: 0.5em;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.main-footer {
+    background-color: #000000;
+    padding: 1em;
+    display: flex; 
+    flex-direction: row; /* all in one row */
+    justify-content: space-between; /* left and right */
+}
+
+/* hyperlinks */
+.main-footer a {    
+    color: #ebdede91;
+    padding: 0.2em;
+    text-decoration: none; /* underlines disappear */
+}
+
+.main-footer a:hover {
+    color: white;
+}
+
+.social-nav a {
+    font-size: 24px;
+}
