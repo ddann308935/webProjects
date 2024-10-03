@@ -43,9 +43,9 @@ img {
 }
 
 .banner {
-    background-image: url("../images/smartcasual_party.jpg"); /* this doesn't get printed */
+    background-image: url("../images/sneaker_banner.jpg"); /* this doesn't get printed */
     /* .. - moves out of directory */
-    background-position: 50% 30%;
+    background-position: 50% 90%;
     background-size: cover; /* fitting an image in the display */
     min-height: 60vh; 
     /* half the height of the viewport */
