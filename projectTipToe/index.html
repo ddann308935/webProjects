@@ -2,9 +2,11 @@
 <html lang="en">
     <head>          
         <title>Home Page</title> <!--tab title-->
-        <link rel="icon" href="home-solid.png"> <!--tab logo-->
+        <link rel="icon" href="icons/home.png"> <!--tab logo-->
 
         <link rel="stylesheet" href="styles/main.css"> <!--css stylesheet-->
+        <link rel="stylesheet" href="styles/responsive.css"> <!--css stylesheet-->
+
         <meta charset="utf-8"> <!--Language: English-->
         <meta name="description" content="a web page for learning HTML and CSS"> <!--meta description-->
         <meta name="keyword" content="HTML,CSS,learning">   <!--keywords within content: should be specific-->
@@ -20,6 +22,10 @@
             <!-- '/' link to home page-->
                 <img src="images/spurs.jpg" alt="company name">  <!--clickable logo-->
             </a>
+
+            <button type="button" class="nav-button"> <!--button-->
+                <i class="fa-solid fa-bars"></i> <!--hamburger menu-->
+            </button>
 
             <!--Form: allows the user to input data to the website-->
             <form class="search" method="get" action="https://example.com/search"> <!--SEARCH FIELD-->
@@ -45,7 +51,9 @@
                 <img class="card-image" src="products/DB_1.jpg" alt="DB 1 - Midtop Red/White ">
                 <div class="card-content">
                     <h4>DB 1 - Midtop Red/White</h4>
+                    <pre></pre>
                     <p>Designed for casual occasions and physical activity</p>  
+                    <pre></pre>
                     <p>These stylish mid-top sneakers have been engineered with durable leather, textile upper grooves 
                     and rubber outsoles to support durability and natural motion</p>
                     <a href="#" class="card-button">Buy Now</a>
@@ -55,9 +63,12 @@
                 <img class="card-image" src="products/DB_350.jpg" alt="DB 350 - CLoud White Non-Reflective">
                 <div class="card-content">
                     <h4>DB 350 - Cloud White Non-Reflective</h4>
+                    <pre></pre>
                     <p>Designed for casual occasions</p>
+                    <pre></pre>
                     <p>These stylish sneakers have been engineered with our signature 'COMFORT' technology, 
                     designed for ultra-comfort and durability</p>
+
                     <a href="#" class="card-button">Buy Now</a>
                 </div>
             </div>
@@ -65,7 +76,9 @@
                 <img class="card-image" src="products/DB_Leather.jpg" alt="DB LEATHER - Black">
                 <div class="card-content">
                     <h4>DB LEATHER - Black</h4>
+                    <pre></pre>
                     <p>Designed for smart casual occasions</p>
+                    <pre></pre>
                     <p>These sophisticated sneakers have a simple black leather body with reliable white outsoles. 
                     They have been engineered with our signature 'COMFORT' technology, designed 
                     for ultra-comfort and durability</p>

@@ -1,0 +1,24 @@
+/* requires <meta name="viewport">
+
+/* overrides main.css */
+@media screen and (max-width: 576px) {
+    .home-content {
+        grid-template-columns: 1fr;
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .search {
+        width: 100%;
+        display: flex;
+    }
+    .search input {
+        flex: 1;
+    }
+    .logo {
+        margin: auto;
+    }
+    .nav-button {
+        display: block; /*menu button only appears in mobile */
+    }
+}

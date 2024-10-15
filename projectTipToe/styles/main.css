@@ -42,12 +42,26 @@ img {
     background-color:rgb(13, 36, 112);
 }
 
+.nav-button {
+    align-self: center;
+    font-size: 32px;
+    padding: 5px;
+    min-width: 48px;
+    background-color: transparent;
+    border-color: transparent;
+    display: none; /*menu button only appears in mobile */
+}
+
+.nav-button:focus {
+    background-color: #202020;
+    color: #fdfdfd;
+}
 .banner {
-    background-image: url("../images/sneaker_banner.jpg"); /* this doesn't get printed */
+    background-image: url("../images/vibes.jpeg"); /* this doesn't get printed */
     /* .. - moves out of directory */
-    background-position: 50% 90%;
+    background-position: 50% 40%;
     background-size: cover; /* fitting an image in the display */
-    min-height: 60vh; 
+    min-height: 70vh; 
     /* half the height of the viewport */
 
     /* CENTER */
@@ -75,7 +89,7 @@ img {
 
 .card-image {
     aspect-ratio: 4/3;
-    object-fit: cover;
+    object-fit:contain;
 }
 
 .card {
