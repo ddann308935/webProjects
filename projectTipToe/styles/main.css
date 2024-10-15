@@ -59,9 +59,9 @@ img {
 .banner {
     background-image: url("../images/vibes.jpeg"); /* this doesn't get printed */
     /* .. - moves out of directory */
-    background-position: 50% 40%;
-    background-size: cover; /* fitting an image in the display */
-    min-height: 70vh; 
+    background-position: 0% 65%;
+    background-size: 100%; /* fitting an image in the display */
+    min-height: 65vh; 
     /* half the height of the viewport */
 
     /* CENTER */
