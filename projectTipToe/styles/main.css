@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(13, 36, 112);
+    background-color: rgb(160, 127, 214);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px; /*viewport edges */
@@ -10,7 +10,7 @@ img {
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 150px;
 }
 
 .main-header {
@@ -32,14 +32,14 @@ img {
 /* element: nav, item: a */
 .navigation a { 
     text-decoration: none;  /* underline */
-    color: rgb(13, 36, 112); /* link color */
+    color: rgb(160, 127, 214); /* link color */
     padding: 8px;
 }
 
 /* pseudoclass */
 .navigation a:hover {
     color: rgb(255, 255, 255);
-    background-color:rgb(13, 36, 112);
+    background-color:rgb(160, 127, 214);
 }
 
 .nav-button {
@@ -75,7 +75,7 @@ img {
 
 .banner h1 {
     color:rgb(255, 255, 255);
-    background-color:rgb(13, 36, 112);
+    background-color:rgb(160, 127, 214);
     padding: 10px;
 }
 
@@ -99,7 +99,7 @@ img {
 
 .card-button {
     background-color:rgb(255, 255, 255);
-    color: rgb(13, 36, 112);
+    color: rgb(160, 127, 214);
     display: block;
     padding: 0.5em;
     text-align: center;
