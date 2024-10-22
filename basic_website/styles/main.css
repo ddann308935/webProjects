@@ -42,6 +42,11 @@ img {
     background-color:rgb(13, 36, 112);
 }
 
+.nav-button:focus {
+    background-color: #202020;
+    color: #fdfdfd;
+}
+
 .banner {
     background-image: url("../images/celebration.avif"); /* this doesn't get printed */
     /* .. - moves out of directory */
@@ -91,4 +96,27 @@ img {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.main-footer {
+    background-color: #000000;
+    padding: 1em;
+    display: flex; 
+    flex-direction: row; /* all in one row */
+    justify-content: space-between; /* left and right */
+}
+
+/* hyperlinks */
+.main-footer a {    
+    color: #ebdede91;
+    padding: 0.2em;
+    text-decoration: none; /* underlines disappear */
+}
+
+.main-footer a:hover {
+    color: white;
+}
+
+.social-nav a {
+    font-size: 24px;
 }

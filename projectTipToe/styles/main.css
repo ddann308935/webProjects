@@ -1,9 +1,21 @@
 body {
     background-color: rgb(160, 127, 214);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     margin: 0px; /*viewport edges */
 }
+
+.pt-serif-regular {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.montserrat-alternates-regular {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 img {
     max-width: 100%;
@@ -56,6 +68,7 @@ img {
     background-color: #202020;
     color: #fdfdfd;
 }
+
 .banner {
     background-image: url("../images/vibes.jpeg"); /* this doesn't get printed */
     /* .. - moves out of directory */
@@ -126,6 +139,3 @@ img {
     color: white;
 }
 
-.social-nav a {
-    font-size: 24px;
-}

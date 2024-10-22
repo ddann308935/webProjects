@@ -5,6 +5,7 @@
         <link rel="icon" href="basic_HTMLCSS/home-solid.png"> <!--tab logo-->
 
         <link rel="stylesheet" href="styles/main.css"> <!--css stylesheet-->
+
         <meta charset="utf-8"> <!--Language: English-->
         <meta name="description" content="a web page for learning HTML and CSS"> <!--meta description-->
         <meta name="keyword" content="HTML,CSS,learning">   <!--keywords within content: should be specific-->
@@ -15,16 +16,21 @@
         <header class="main-header"> <!--HEADER-->
 
             <a href="index.html" class="logo"> <!--LOGO-->
-            <!-- '/' link to home page-->
                 <img src="images/spurs.jpg" alt="company name">  <!--clickable logo-->
             </a>
+
+            <button type="button" class="nav-button"> <!--button-->
+                <i class="fa-solid fa-bars"></i> <!--hamburger menu-->
+            </button>
 
             <!--Form: allows the user to input data to the website-->
             <form class="search" method="get" action="https://example.com/search"> <!--SEARCH FIELD-->
             <!--method="get", action="URL/script where the search query is sent"-->
             <!--action="provide a script from the server side to process this search and return a result"-->
             <!--a website with search function: requires a server with database-->
-                <input type="search" name="query" placeholder="Search"> <!--search field--> 
+                
+                <!--Search field-->
+                <input type="search" name="query" placeholder="Search"> <!--search input-->
                 <!--Placeholder: grey text inside the search field-->
                 <!--Name: attaches a name to the input-->
                 <!--type="search" allows the user to clear their input-->
@@ -46,12 +52,12 @@
         <main class="home-content"> <!--CONTENT-->
 
             <div class="card">
-                <img class="card-image" src="products/son_shirt.jpg" alt="Home Jersey - Son #7">
+                <img class="card-image" src="products/son_shirt.jpg" alt="Home Jersey - Son #7"> <!--image-->
                 <div class="card-content">
                     <h4>Home Jersey - Son #7</h4>
                     <p>An official Tottenham Hotspurs Home Jersey with Son Heung-Min #7. 
                     Designed for the 2023/2024 Premier League season.</p>
-                    <a href="#" class="card-button">Buy Now</a>
+                    <a href="#" class="card-button">Buy Now</a> <!--button-->
                 </div>
             </div>
             <div class="card">
@@ -73,7 +79,32 @@
             </div>
 
         </main>           
-        <footer></footer>           <!--FOOTER-->
+        <footer class="main-footer">           <!--FOOTER-->
+
+            <!--Web Page Links-->
+            <nav class="footer-nav">
+                <a href="returns.html">Return Policies</a>
+                <a href="exchange.html">Exchange Policies</a>
+                <a href="delivery.html">Delivery Policies</a>
+            </nav>
+
+            <!--Social Media Links-->
+            <nav class="social-nav">
+                <a href="https://facebook.com/tiptoeshoes">
+                    <i class="fa-brands fa-facebook" role="img" aria-label="Facebook"></i>
+                    <!--Accessibility: role and aria-label -->
+                </a>
+                <a href="https://instagram.com/tiptoeshoes">
+                    <i class="fa-brands fa-square-instagram" role="img" aria-label="Instagram"></i>
+                </a>
+                <a href="https://twitter.com/tiptoeshoes">
+                    <i class="fa-brands fa-square-x-twitter" role="img" aria-label="X-Twitter"></i>
+                </a>
+                <a href="https://youtube.com/tiptoeshoes">
+                    <i class="fa-brands fa-youtube" role="img" aria-label="Youtube"></i>
+                </a>
+            </nav>
+        </footer>
     </body>
 
 </html>
