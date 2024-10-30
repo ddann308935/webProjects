@@ -100,6 +100,18 @@ img {
     gap: 20px;
 }
 
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns */
+    max-width: 1200px;
+    margin: 2em;
+    gap: 20px;
+}
+
+.open-hours {
+    text-align: left;
+}
+
 .card-image {
     aspect-ratio: 4/3;
     object-fit:contain;
@@ -139,3 +151,6 @@ img {
     color: white;
 }
 
+.social-nav a {
+    font-size: 24px;
+}

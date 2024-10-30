@@ -1,4 +1,4 @@
-/* requires <meta name="viewport">
+/* requires <meta name="viewport"> */
 
 /* overrides main.css */
 @media screen and (max-width: 576px) {
@@ -44,7 +44,7 @@
     .logo {
         margin: auto;
     }
-
+    
     .nav-button {
         display: block; /*menu button only appears in mobile */
     }
