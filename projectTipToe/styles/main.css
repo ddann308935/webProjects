@@ -154,3 +154,35 @@ img {
 .social-nav a {
     font-size: 24px;
 }
+
+/* contact form */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+#contact label {
+    font-weight: 500;
+}
+#contact input {
+    margin-bottom: 0.5em;
+    border: 1px solid #666666;
+    padding: 0.5em;
+}
+#contact input:focus, #contact textarea:focus {
+    outline: dashed 2px red;
+}
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+.form-buttons button {
+    background-color: #202020;
+    padding: 0.5em;
+    color: #cccccc;
+    min-width: 10ch;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
