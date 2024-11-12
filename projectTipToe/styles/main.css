@@ -1,21 +1,9 @@
 body {
-    background-color: rgb(160, 127, 214);
-    color: white;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    background-color: rgb(31, 29, 29);
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
     margin: 0px; /*viewport edges */
 }
-
-.pt-serif-regular {
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-.montserrat-alternates-regular {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
 
 img {
     max-width: 100%;
@@ -34,6 +22,7 @@ img {
     background-color: rgb(255, 255, 255); 
     align-items: flex-end; /* move items to the bottom */
     padding: 10px 20px; /* padding of a box: TB LR */
+    font-family: kanit;
 }
 
 .navigation {
@@ -44,14 +33,14 @@ img {
 /* element: nav, item: a */
 .navigation a { 
     text-decoration: none;  /* underline */
-    color: rgb(160, 127, 214); /* link color */
+    color: rgb(0, 0, 0); /* link color */
     padding: 8px;
 }
 
 /* pseudoclass */
 .navigation a:hover {
     color: rgb(255, 255, 255);
-    background-color:rgb(160, 127, 214);
+    background-color:rgb(41, 231, 114);
 }
 
 .nav-button {
@@ -69,12 +58,12 @@ img {
     color: #fdfdfd;
 }
 
-.banner {
+.banner-home {
     background-image: url("../images/vibes.jpeg"); /* this doesn't get printed */
     /* .. - moves out of directory */
-    background-position: 0% 65%;
+    background-position: 0% 50%;
     background-size: 100%; /* fitting an image in the display */
-    min-height: 65vh; 
+    min-height: 91vh; 
     /* half the height of the viewport */
 
     /* CENTER */
@@ -86,17 +75,36 @@ img {
     align-items: flex-start; /* TOP */
 }
 
+.banner-contact {
+    background-image: url(""); /* this doesn't get printed */
+    /* .. - moves out of directory */
+    background-position: 0% 50%;
+    background-size: 100%; /* fitting an image in the display */
+    min-height: 40vh; 
+    /* half the height of the viewport */
+
+    /* CENTER */
+    display: grid; /* formatting the display */
+    place-items: center; /* placing HTML items in the display */
+    /* TOP LEFT */
+    display: flex;
+    justify-content: flex-start; /* LEFT */
+    align-items: flex-start; /* TOP */
+}
+
+/*
 .banner h1 {
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     background-color:rgb(160, 127, 214);
     padding: 10px;
 }
+*/
 
 .home-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-width: 1200px;
-    margin: 2em;
+    margin: 2em auto;
     gap: 20px;
 }
 
@@ -104,7 +112,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr; /* two columns */
     max-width: 1200px;
-    margin: 2em;
+    margin: 2em auto;
     gap: 20px;
 }
 
@@ -118,13 +126,13 @@ img {
 }
 
 .card {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(41, 231, 114);
     padding: 1em;
 }
 
 .card-button {
-    background-color:rgb(255, 255, 255);
-    color: rgb(160, 127, 214);
+    background-color: rgb(41, 231, 114);
+    color: rgb(0, 0, 0);
     display: block;
     padding: 0.5em;
     text-align: center;
@@ -132,23 +140,33 @@ img {
     border-radius: 5px;
 }
 
+.card-button {
+    color: white;
+}
+
+.card-button a:hover {
+    color: white;
+}
+
 .main-footer {
-    background-color: #000000;
+    background-color: #ffffff;
     padding: 1em;
     display: flex; 
     flex-direction: row; /* all in one row */
     justify-content: space-between; /* left and right */
+    font-family: kanit;
 }
 
 /* hyperlinks */
 .main-footer a {    
-    color: #ebdede91;
+    color: rgb(0, 0, 0);
     padding: 0.2em;
     text-decoration: none; /* underlines disappear */
 }
 
 .main-footer a:hover {
     color: white;
+    background-color: rgb(41, 231, 114);
 }
 
 .social-nav a {
