@@ -1,15 +1,15 @@
 <!DOCTYPE html>     
 <html lang="en">
     <head>          
-        <title>Home Page</title> <!--tab title-->
+        <title>About Us</title> <!--tab title-->
         <link rel="icon" href="icons/home.png"> <!--tab logo-->
 
         <link rel="stylesheet" href="styles/main.css"> <!--css stylesheet-->
         <link rel="stylesheet" href="styles/responsive.css"> <!--css stylesheet-->
 
         <meta charset="utf-8"> <!--Language: English-->
-        <meta name="description" content="a web page for learning HTML and CSS"> <!--meta description-->
-        <meta name="keyword" content="HTML,CSS,learning">   
+        <meta name="description" content="the web page that describes who TipTop Shoes are"> <!--meta description-->
+        <meta name="keyword" content="shoes,Australian">   
         <meta name="viewport" content="width = device-width, inital-scale = 1"> 
         
         <!--font-family-->
@@ -22,7 +22,7 @@
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head> 
 
-    <body>
+    <body class="about-page">
         <header class="main-header"> <!--HEADER-->
 
             <a href="index.html" class="logo"> <!--LOGO-->
@@ -40,27 +40,18 @@
             </form>
             
             <nav class="navigation" id="main-nav"> <!--NAVIGATION through links-->
-                <a href="index.html" class="active" >Home</a>
-                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active" >About</a>
                 <a href="contact.html">Contact</a>
             </nav>
 
         </header>
 
-        <!-- <div class="banner-home"> -->        <!--BANNER-->
-            <!--h1>Welcome</h1-->
-        <!-- </div> -->
+        <!--<div class="banner-home">       BANNER
+            h1>Welcome</h1>
+        </div>-->
       
-        <!--CAROUSEL: no more than five slides-->
-        <div id="home-carousel" data-flickity='{ "cellAlign": true, "contain": true, "autoplay": 3000 }'>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-            <div class="slide"></div>
-        </div>
-
-        <main class="home-content"> <!--CONTENT-->
+        <main class="about-content"> <!--CONTENT-->
 
             <div class="card">
                 <img class="card-image" src="products/DB_1.jpg" alt="DB 1 - Midtop Red/White ">
@@ -71,7 +62,6 @@
                     <pre></pre>
                     <p>These stylish mid-top sneakers have been engineered with durable leather, textile upper grooves 
                     and rubber outsoles to support durability and natural motion</p>
-                    <a href="#" class="card-button">Buy Now</a>
                 </div>
             </div>
             <div class="card">
@@ -83,26 +73,13 @@
                     <pre></pre>
                     <p>These stylish sneakers have been engineered with our signature 'COMFORT' technology, 
                     designed for ultra-comfort and durability</p>
-                    <a href="#" class="card-button">Buy Now</a>
+                    
                 </div>
             </div>
-            <div class="card">
-                <img class="card-image" src="products/DB_Leather.jpg" alt="DB LEATHER - Black">
-                <div class="card-content">
-                    <h4>DB LEATHER - Black</h4>
-                    <pre></pre>
-                    <p>Designed for smart casual occasions</p>
-                    <pre></pre>
-                    <p>These sophisticated sneakers have a simple black leather body with reliable white outsoles. 
-                    They have been engineered with our signature 'COMFORT' technology, designed 
-                    for ultra-comfort and durability</p>
-                    <a href="#" class="card-button">Buy Now</a>
-                </div>
-            </div>
-
         </main>  
 
         <footer class="main-footer"> <!--FOOTER-->
+
             <!--Links-->
             <nav class="footer-nav">
                 <a href="returns.html">Return Policies</a>

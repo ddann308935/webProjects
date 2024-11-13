@@ -3,6 +3,7 @@ body {
     color: rgb(255, 255, 255);
     font-family: sans-serif;
     margin: 0px; /*viewport edges */
+    overflow-y: scroll;
 }
 
 img {
@@ -37,10 +38,26 @@ img {
     padding: 8px;
 }
 
+.navigation a:link {
+
+}
+
+.navigation a:visited {
+
+}
+
 /* pseudoclass */
 .navigation a:hover {
     color: rgb(255, 255, 255);
     background-color:rgb(41, 231, 114);
+}
+
+.navigation a:active {
+
+}
+
+.navigation a.active {
+    font-weight: bold;
 }
 
 .nav-button {
@@ -76,7 +93,7 @@ img {
 }
 
 .banner-contact {
-    background-image: url(""); /* this doesn't get printed */
+    background-image: url("______"); /* this doesn't get printed */
     /* .. - moves out of directory */
     background-position: 0% 50%;
     background-size: 100%; /* fitting an image in the display */
@@ -99,6 +116,30 @@ img {
     padding: 10px;
 }
 */
+
+/* carousel */
+
+.slide {
+    min-width: 100%;
+    min-height: 95vh;
+    display: grid;
+    place-items: center;
+    font-size: 5em;
+    /* default background attributes */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(1) {
+    background-image: url("../images/1s.jpg");
+    background-position: 0% 60%;
+}
+
+.slide:nth-child(2) {
+    background-image: url("../images/350s.jpg");
+    background-position: 0% 100%;
+}
 
 .home-content {
     display: grid;
@@ -179,28 +220,50 @@ img {
     display: flex;
     flex-direction: column;
 }
+
 #contact label {
     font-weight: 500;
 }
+
 #contact input {
-    margin-bottom: 0.5em;
-    border: 1px solid #666666;
+    margin-bottom: 1em;
+    border: 1px solid rgb(63, 62, 62);
     padding: 0.5em;
 }
+
+/* focus is for input elements */
 #contact input:focus, #contact textarea:focus {
-    outline: dashed 2px red;
+    outline: solid rgb(41, 231, 114);
 }
-.form-buttons {
+
+.form-button {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*row reverse */
     justify-content: space-between;
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
-.form-buttons button {
-    background-color: #202020;
-    padding: 0.5em;
-    color: #cccccc;
+
+.form-button button {
+    background-color: white;
+    padding: 0.2em;
+    color: black;
     min-width: 10ch;
     border: 1px solid transparent;
-    border-radius: 4px;
+}
+
+/* about us */
+
+.about-page {
+    min-height: 100%; /* body will cover the entire height of the vp */
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    /* header- auto, body: 1fr, footer-auto */
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns */
+    max-width: 1200px;
+    margin: 2em auto;
+    gap: 20px;
 }
