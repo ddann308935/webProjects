@@ -132,14 +132,31 @@ img {
 }
 
 .slide:nth-child(1) {
+    background-image: url("../images/car.webp");
+    background-position: 0% 100%;
+}
+
+.slide:nth-child(2) {
     background-image: url("../images/1s.jpg");
     background-position: 0% 60%;
 }
 
-.slide:nth-child(2) {
+.slide:nth-child(3) {
     background-image: url("../images/350s.jpg");
     background-position: 0% 100%;
 }
+
+.slide:nth-child(4) {
+    background-image: url("../images/vibes.jpg");
+    background-position: 0% 100%;
+}
+
+.slide:nth-child(5) {
+    background-image: url("../images/black_leather0.jpg");
+    background-position: 0% 50%;
+}
+
+/* */
 
 .home-content {
     display: grid;
