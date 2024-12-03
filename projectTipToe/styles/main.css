@@ -79,7 +79,7 @@ img {
     /* .. - moves out of directory */
     background-position: 0% 50%;
     background-size: 100%; /* fitting an image in the display */
-    min-height: 91vh; 
+    min-height: 75vh; 
     /* half the height of the viewport */
 
     /* CENTER */
