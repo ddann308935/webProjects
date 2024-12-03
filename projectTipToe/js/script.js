@@ -23,6 +23,3 @@ function onLoad() {
 // waiting for document to load
 // 'load' is a HTML event, onLoad is a js function
 window.addEventListener('load', onLoad )
-
-
-

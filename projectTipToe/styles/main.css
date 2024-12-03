@@ -52,14 +52,11 @@ img {
     background-color:rgb(41, 231, 114);
 }
 
-.navigation a:active {
-
-}
-
 .navigation a.active {
     font-weight: bold;
 }
 
+/*menu button only appears in mobile */
 .nav-button {
     align-self: center;
     font-size: 32px;
@@ -67,13 +64,15 @@ img {
     min-width: 48px;
     background-color: transparent;
     border-color: transparent;
-    display: none; /*menu button only appears in mobile */
+    display: none; 
 }
 
 .nav-button:focus {
     background-color: #202020;
     color: #fdfdfd;
 }
+
+/*banner*/
 
 .banner-home {
     background-image: url("../images/vibes.jpeg"); /* this doesn't get printed */
@@ -93,11 +92,28 @@ img {
 }
 
 .banner-contact {
-    background-image: url("______"); /* this doesn't get printed */
+    background-image: url("../images/city_night.jpg"); /* this doesn't get printed */
     /* .. - moves out of directory */
-    background-position: 0% 50%;
+    background-position: 50% 33%;
     background-size: 100%; /* fitting an image in the display */
-    min-height: 40vh; 
+    min-height: 55vh; 
+    /* half the height of the viewport */
+
+    /* CENTER */
+    display: grid; /* formatting the display */
+    place-items: center; /* placing HTML items in the display */
+    /* TOP LEFT */
+    display: flex;
+    justify-content: flex-start; /* LEFT */
+    align-items: flex-start; /* TOP */
+}
+
+.banner-about {
+    background-image: url("../images/group.jpg"); /* this doesn't get printed */
+    /* .. - moves out of directory */
+    background-position: 0% 13%;
+    background-size: 100%; /* fitting an image in the display */
+    min-height: 55vh; 
     /* half the height of the viewport */
 
     /* CENTER */
@@ -132,7 +148,7 @@ img {
 }
 
 .slide:nth-child(1) {
-    background-image: url("../images/car.webp");
+    background-image: url("../images/vibes.jpg"); 
     background-position: 0% 100%;
 }
 
@@ -147,7 +163,7 @@ img {
 }
 
 .slide:nth-child(4) {
-    background-image: url("../images/vibes.jpg");
+    background-image: url("../images/car.webp");
     background-position: 0% 100%;
 }
 
@@ -166,16 +182,11 @@ img {
     gap: 20px;
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* two columns */
-    max-width: 1200px;
-    margin: 2em auto;
-    gap: 20px;
-}
-
-.open-hours {
-    text-align: left;
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
 }
 
 .card-image {
@@ -204,6 +215,20 @@ img {
 
 .card-button a:hover {
     color: white;
+}
+
+/* contact page */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns */
+    max-width: 1200px;
+    margin: 2em auto;
+    gap: 20px;
+}
+
+.open-hours {
+    text-align: left;
 }
 
 .main-footer {
