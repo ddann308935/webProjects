@@ -103,7 +103,7 @@ img {
 .banner-contact {
     background-image: url("../images/sydney-harbour.jpg"); /* this doesn't get printed */
     /* .. - moves out of directory */
-    background-position: 50% 10%;
+    background-position: 50% 50%;
     background-size: 100%; /* fitting an image in the display */
     min-height: 55vh; 
     /* half the height of the viewport */
@@ -296,7 +296,7 @@ img {
 .about-page {
     min-height: 100%; /* body will cover the entire height of the vp */
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    /* grid-template-rows: auto 1fr auto; */
     /* header- auto, body: 1fr, footer-auto */
 }
 
