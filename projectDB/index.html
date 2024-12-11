@@ -1,15 +1,15 @@
 <!DOCTYPE html>     
 <html lang="en">
     <head>          
-        <title>About Us</title> <!--tab title-->
+        <title>Home Page</title> <!--tab title-->
         <link rel="icon" href="icons/home.png"> <!--tab logo-->
 
         <link rel="stylesheet" href="styles/main.css"> <!--css stylesheet-->
         <link rel="stylesheet" href="styles/responsive.css"> <!--css stylesheet-->
 
         <meta charset="utf-8"> <!--Language: English-->
-        <meta name="description" content="the web page that describes who TipTop Shoes are"> <!--meta description-->
-        <meta name="keyword" content="shoes,Australian">   
+        <meta name="description" content="a web page for learning HTML and CSS"> <!--meta description-->
+        <meta name="keyword" content="HTML,CSS,learning">   
         <meta name="viewport" content="width = device-width, inital-scale = 1"> 
         
         <!--social media-->
@@ -25,7 +25,7 @@
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head> 
 
-    <body class="about-page">
+    <body>
         <header class="main-header"> <!--HEADER-->
 
             <a href="index.html" class="logo"> <!--LOGO-->
@@ -43,8 +43,8 @@
             </form>
             
             <nav class="navigation" id="main-nav"> <!--NAVIGATION through links-->
-                <a href="index.html">Home</a>
-                <a href="about.html" class="active" >About Us</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Us</a>
                 <a href="products.html">Products</a>
                 <a href="services.html">Services</a>
                 <a href="wishlist.html">Wishlist</a>
@@ -55,23 +55,56 @@
 
         </header>
 
-        <div class="banner-about">       <!--BANNER-->
-            <h1>About Us</h1>
-        </div>
+        <!-- <div class="banner-home"> -->        <!--BANNER-->
+            <!--h1>Welcome</h1-->
+        <!-- </div> -->
       
-        <main class="about-content"> <!--CONTENT-->
+        <!--CAROUSEL: no more than five slides-->
+        <div id="home-carousel" data-flickity='{ "cellAlign": true, "contain": true, "autoPlay": 3000 }'>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+        </div>
+
+        <main class="home-content"> <!--CONTENT-->
+
             <div class="card">
-                <div>
-                    <h2>Established in Sydney </h2>
-                    <pre></pre>
-                    <p>Starting out from a small home garage providing shoes as a white label to various other brands, we have thrived to become a leading shoe manufacturing company in Sydney and Australia. We have grown and expanded our company to provide the highest quality products while never forgetting our roots to help out local businesses and communities.</p>
-                        
-                    <p>We are proud to announce that in 2025, we will be launching our own shoe brand at affordable prices. These shoes have been designed for comfort and daily wear.</p>
-                
-                    <p>Our Vision is to grow our shoe brand into THE go-to affordable shoe brand in Australia and around the world.</p>
+                <img class="card-image" src="products/DB_1.jpg" alt="DB 1 - Midtop Red/White ">
+                <div class="card-content">
+                    <h4>DB 1 - Midtop Red/White</h4>
+                    <p>Designed for Casual and Physical Occasions</p>  
+                    <p>These stylish mid-top sneakers have been engineered with durable leather, textile upper grooves 
+                    and rubber outsoles to support durability and natural motion</p>
+                    <br>
+                    <a href="#" class="card-button">Buy Now</a>
                 </div>
             </div>
-            <img class="about-image" src="images/shoe-crafting.jpg" alt="Person crafting a shoe">
+            <div class="card">
+                <img class="card-image" src="products/DB_350.jpg" alt="DB 350 - CLoud White Non-Reflective">
+                <div class="card-content">
+                    <h4>DB 350 - Cloud White Non-Reflective</h4>
+                    <p>Designed for Casual Occasions</p>
+                    <p>These stylish sneakers have been engineered with our signature 'COMFORT' technology, 
+                    designed for ultra-comfort and durability
+                <br><br><br>
+                </p>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src="products/DB_Leather.jpg" alt="DB LEATHER - Black">
+                <div class="card-content">
+                    <h4>DB LEATHER - Black</h4>
+                    <p>Designed for Smart Casual Occasions</p>
+                    <p>These sophisticated sneakers have a simple black leather body with reliable white outsoles. 
+                    They have been engineered with our signature 'COMFORT' technology, designed 
+                    for ultra-comfort and durability</p>
+                    <a href="#" class="card-button">Buy Now</a>
+                </div>
+            </div>
+
         </main>  
 
         <footer class="main-footer"> <!--FOOTER-->
@@ -97,7 +130,7 @@
                     <i class="fa-brands fa-youtube" role="img" aria-label="Youtube"></i>
                 </a>
             </nav>
-        </footer>             
+        </footer>            
     </body>
 
 </html>

@@ -1,0 +1,51 @@
+/* requires <meta name="viewport">
+
+/* overrides main.css */
+@media screen and (max-width: 576px) {
+    .home-content {
+        grid-template-columns: 1fr;
+    }
+    
+    /* places nav at the top of screen */
+    .main-header {
+        position: relative;
+    }
+    
+    .navigation {
+        position: absolute; 
+        top: 100%;
+        left: 0px;
+        z-index: 999;
+        background-color: white;
+        min-width: 100%;
+        flex-direction: column;
+        max-height: 0px;
+        overflow: hidden; /* hides nav */
+        transition: max-height 0.5s; /* animation */
+    }
+
+    .navigation.open {
+        max-height: 50vh;
+    }
+
+    .navigation a {
+        min-width: 100%;
+    }
+
+    .search {
+        width: 100%;
+        display: flex;
+    }
+
+    .search input {
+        flex: 1;
+    }
+
+    .logo {
+        margin: auto;
+    }
+
+    .nav-button {
+        display: block; /*menu button only appears in mobile */
+    }
+}
